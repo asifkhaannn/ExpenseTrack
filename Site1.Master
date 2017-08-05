@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ExpTracker.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            width: 75%;
+            height: 171px;
+        }
+        .style5
+        {
+            height: 8px;
+        }
+        .style20
+        {
+            width: 267px;
+            height: 38px;
+            float: right;
+            margin-top: 0px;
+            margin-left: 4px;
+        }
+        .style4
+        {
+            height: 16px;
+        }
+        .style22
+        {
+            height: 39px;
+            font-size: large;
+            color: #FF0066;
+        }
+        .style23
+        {
+            height: 40px;
+        }
+        .style24
+        {
+            height: 13px;
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body background="bg_microsoft_bottomnew.png">
+    
+    
+    
+    
+    <form id="form1" runat="server">
+   
+    <div><center>
+    <table class="style1">
+        <tr>
+            <td style="background-image: url('header_bg.gif'); text-align: right; vertical-align: bottom;" 
+                class="style23" colspan="2">
+                <img alt="ass" class="style20" longdesc="ass" src="images.jpg" />
+                <br />
+
+            </td>
+        </tr>
+        <tr align=left>
+            <td class="style24" style="font-size: xx-large; margin-left: 120px;">
+                <asp:Menu ID="Menu4" runat="server"  
+                    DynamicHorizontalOffset="2" Font-Names="Times New Roman" Font-Size="Medium" 
+                    ForeColor="#284E98" StaticSubMenuIndent="10px" 
+                    style="text-align: left" DynamicPopOutImageTextFormatString="" 
+                    Orientation="Horizontal" Height="17px" Width="540px">
+                    <DynamicHoverStyle BackColor="#284E98" BorderStyle="Groove" ForeColor="White" />
+                    <DynamicMenuItemStyle BorderStyle="Dotted" HorizontalPadding="5px" 
+                        VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home " Value="Home " Selected="True">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Expenditure" Value="Expenditure">
+                            <asp:MenuItem Text="Log a Expendtiure" ToolTip="Log a Expendtiure" 
+                                Value="Log a Expendtiure" NavigateUrl="~/LogExpend.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Get Expenditure" Value="Get Expenditure" 
+                                NavigateUrl="~/GetExpenditure.aspx" ToolTip="Get Expenditure"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Income" Value="income">
+                            <asp:MenuItem NavigateUrl="~/Income.aspx" 
+                                Text="Retrive Income" Value="Delete GLHistory Balances">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Log Out " ToolTip="Log Out " 
+                            Value="Log Out "></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" ToolTip="About" Value="About"></asp:MenuItem>
+                        <asp:MenuItem Text="Help" Value="Help" NavigateUrl="~/Help.aspx">
+
+
+
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" BorderStyle="None" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#507CD1" BorderStyle="Outset" />
+                                    </asp:Menu>
+                
+                </td>
+            <td class="style24" align="right"   style="font-size: xx-large; ">
+                                    <asp:Label ID="Label1" runat="server" style="text-align: left;" 
+                    Height="35px" Width="236px" Font-Names="Times New Roman" Font-Size="Medium" 
+                    Font-Underline="False" ForeColor="#FF0066" Font-Bold="True"></asp:Label>
+                
+                </td>
+        </tr>
+        <tr>
+            <td class="style5" style="font-size: xx-large" colspan="2">
+                &nbsp;</td>
+        </tr>
+        <tr align=left>
+            <td class="style5" style="font-size: xx-large" colspan="2">
+                <marquee >
+                Welcome to EXPENSE TRACKER TOOL</marquee></td>
+        </tr>
+        <tr>
+            <td class="style5" colspan="2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style4" style="font-size: medium" colspan="2">
+                <p>&nbsp;<img src="Logo134.png" style="height:150px;width:150px;float:left !important" /></p>
+                <p>
+                    <br />
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="style22" colspan="2" >
+
+                    <strong style="background-color: #FFFFFF; color: #0000FF;float:right">CopyRight @ 2017</strong></td>
+        </tr>
+        </table></center>
+        <br />
+        <br />
+    </div>
+   
+   
+ </form>
+</body>
+</html>
